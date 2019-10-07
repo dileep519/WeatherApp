@@ -54,7 +54,7 @@ function dothis(z){
         document.getElementById('p1').textContent=z;
         document.getElementById('temp1').innerHTML=result.main.temp+'&#176'+'F';
         document.getElementById('typ').innerHTML=result.weather[0].main;
-        document.getElementById('im1').src='http://openweathermap.org/img/w/'+result.weather[0].icon+'.png';
+        document.getElementById('im1').src='https://openweathermap.org/img/w/'+result.weather[0].icon+'.png';
         document.getElementById('wind1').innerHTML='Wind at '+Math.floor(result.wind.speed)+' m/s';
         document.getElementById('humid').innerHTML='Humidity levels at '+result.main.humidity;
         
