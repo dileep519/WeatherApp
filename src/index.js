@@ -23,7 +23,7 @@ function dothis(z){
     z=z[0].split('');
     z[0]=z[0].toUpperCase();
     z=z.join('')
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${lon}&units=Imperial&APPID=40c43215241423a98d101e9aa373f731`).then(res=>{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${lon}&units=Imperial&APPID=40c43215241423a98d101e9aa373f731`).then(res=>{
         return res.json();
     }).then(result=>{
         var req=document.getElementById('d3');
